@@ -1,0 +1,2 @@
+add_lunch_combo omni_gemini-eng
+add_lunch_combo omni_gemini-userdebug
