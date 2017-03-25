@@ -34,7 +34,7 @@
 /dev/kgsl-2d0             0666   root       root
 /dev/kgsl-2d1             0666   root       root
 /dev/ion                  0664   system     system
-/dev/rtc0                 0640   system     system
+/dev/rtc0                 0600   system     system
 /dev/smd0                 0660   system     system
 /dev/smd4                 0660   system     system
 /dev/smd_cxm_qmi          0640   radio      radio
@@ -103,20 +103,12 @@
 /dev/mhi_pipe_14          0640   radio      radio
 /dev/mhi_pipe_16          0640   radio      radio
 /dev/mhi_pipe_32          0640   radio      radio
-/dev/at_usb0              0640   radio      radio
-/dev/at_mdm0              0640   radio      radio
 /dev/video*               0660   system     camera
 /dev/media*               0660   system     camera
 /dev/v4l-subdev*          0660   system     camera
 /dev/qseecom              0660   system     drmrpc
-/dev/qsee_ipc_irq_spss    0660   system     drmrpc
 /dev/seemplog             0660   system     system
 /dev/pft                  0660   system     drmrpc
-/dev/spcom                0660   system     system
-/dev/sp_kernel            0660   system     system
-/dev/sp_ssr               0660   system     system
-/dev/sp_keymaster         0660   system     system
-/dev/cryptoapp            0660   system     system
 /dev/gemini0              0660   system     camera
 /dev/jpeg0                0660   system     camera
 /dev/jpeg1                0660   system     camera
@@ -134,10 +126,9 @@
 /dev/msm_vidc_enc         0660   system     audio
 /dev/msm_rotator          0660   system     system
 /dev/hw_random            0600   root       root
-/dev/sdsprpc-smd          0660   system     system
+/dev/adsprpc-smd          0664   system     system
 
 #permissions for audio
-/dev/wcd-dsp-glink        0660   system     audio
 /dev/audio_slimslave      0660   system     audio
 /dev/msm_qcelp            0660   system     audio
 /dev/msm_evrc             0660   system     audio
@@ -213,18 +204,20 @@
 /sys/devices/virtual/input/input*                   poll           0660    input    system
 /sys/devices/virtual/input/input*                   pollrate_ms    0660    input    system
 
-# laser sensor access
-/sys/devices/virtual/input/input*                   enable_ps_sensor 0660  system   system
-/sys/devices/virtual/input/input*                   set_delay_ms     0660  system   system
+# vm_bms
+/dev/vm_bms               0660   system     system
+/dev/battery_data         0660   system     system
 
 # wlan
 /dev/wcnss_wlan           0660   system     system
 /dev/wcnss_ctrl           0660   system     system
 /sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan0/queues/rx-* rps_cpus 0660 system system
-/sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/p2p*/queues/rx-* rps_cpus 0660 system system
+/sys/devices/soc/600000.qcom,pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/p2p0/queues/rx-* rps_cpus 0660 system system
 
-# NFC device
-/dev/pn548                0660   nfc        nfc
+#nfc permissions
+/dev/nfc-nci              0660    nfc         nfc
+/dev/nq-nci               0660    nfc         nfc
+/dev/assd                 0660    nfc         nfc
 
 # UIO devices
 /dev/uio0                 0660   system     system
@@ -232,7 +225,7 @@
 /dev/uio2                 0660   system     system
 
 # SSR devices
-/dev/subsys_*             0640   system     system
+/dev/subsys_*         0640   system     system
 
 # Ultrasound device
 /dev/usf1                 0660   system     system
@@ -242,15 +235,10 @@
 
 # Fingerprint device
 /dev/qbt1000              0660   system     system
-/dev/fpc1020              0666   system     system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
 /dev/hbtp_vm              0660   system     system
 
-# IR device
-/dev/lirc0                0660   system     system
-
-# Device block for FRP
-/dev/block/bootdevice/by-name/frp                                  0660   system     system
-/dev/block/platform/soc/624000.ufshc/by-name/frp                   0660   system     system
+# TFA9890 FOR SMARTPA
+/dev/tfa9890              0660   media      media
