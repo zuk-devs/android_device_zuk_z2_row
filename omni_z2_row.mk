@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := z2_plus
+PRODUCT_RELEASE_NAME := z2_row
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -27,8 +27,8 @@ PRODUCT_COPY_FILES += \
     bionic/libc/zoneinfo/tzdata:recovery/root/system/usr/share/zoneinfo/tzdata
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := z2_plus
-PRODUCT_NAME := omni_z2_plus
+PRODUCT_DEVICE := z2_row
+PRODUCT_NAME := omni_z2_row
 PRODUCT_BRAND := ZUK
 PRODUCT_MODEL := Z2 Plus
 PRODUCT_MANUFACTURER := ZUK
