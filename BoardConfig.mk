@@ -25,6 +25,7 @@ TARGET_OTA_ASSERT_DEVICE := z2_row
 
 # Kernel
 TARGET_KERNEL_CONFIG := z2_row_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
