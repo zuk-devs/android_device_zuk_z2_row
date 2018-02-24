@@ -1,24 +1,13 @@
 # Audio ACDB
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
 
-# Audio libraries
-etc/aanc_tuning_mixer.txt
-etc/tfa98xx/coldboot.patch
-etc/tfa98xx/shenqi_music.eq
-etc/tfa98xx/shenqi_music.preset
-etc/tfa98xx/shenqi.speaker
-etc/tfa98xx/shenqi_speech.eq
-etc/tfa98xx/shenqi_speech.preset
-etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config
-etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
-
-# Camera actuators
+# Camera actuator
 vendor/lib/libactuator_ak7371.so
 
 # Camera chromatix
@@ -60,10 +49,20 @@ vendor/lib/libmmcamera_s5k2m8sx.so
 # Camera OIS
 vendor/lib/libois_bu24218gwl.so
 
-# Sensors
-etc/sensors/hals.conf
-etc/sensors/sensor_def_qcomdev.conf
+# Audio libraries
+etc/tfa98xx/coldboot.patch
+etc/tfa98xx/shenqi_music.eq
+etc/tfa98xx/shenqi_music.preset
+etc/tfa98xx/shenqi.speaker
+etc/tfa98xx/shenqi_speech.eq
+etc/tfa98xx/shenqi_speech.preset
+etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config
+etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
 
-# Other files (todo categorize)
-bin/hvdcp_opti
-etc/calib.cfg
+# NXP Amplifier
+lib/libtfa98xx.so|958010801a4311f87605225b3ec87b2177bf40bb
+lib64/libtfa98xx.so|fc72a8882536379881026cae7aa0090dfb4fd585
+
+# Sensors
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/sensor_def_qcomdev.conf
