@@ -28,7 +28,7 @@ TARGET_KERNEL_CONFIG := z2_row_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
 # Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Inherit from the proprietary version
 -include vendor/zuk/z2_row/BoardConfigVendor.mk
