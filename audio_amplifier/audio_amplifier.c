@@ -126,7 +126,12 @@ static int amp_module_open(const hw_module_t *module,
 
     tfa9890_dev->amp_dev.enable_output_devices = &amp_enable_output_devices;
 
-    tfa9890_dev->lib_ptr = dlopen("libtfa98xx.so", RTLD_NOW);
+#if __WORDSIZE == 64
+    tfa9890_dev->lib_ptr = dlopen("/vendor/lib64/libtfa98xx.so", RTLD_NOW);
+#else
+    tfa9890_dev->lib_ptr = dlopen("/vendor/lib/libtfa98xx.so", RTLD_NOW);
+#endif
+
     if (!tfa9890_dev->lib_ptr) {
         ALOGE("%s:%d: Unable to open libtfa98xx: %s",
                 __func__, __LINE__, dlerror());
