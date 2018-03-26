@@ -60,8 +60,8 @@ etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config
 etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
 
 # NXP Amplifier
-lib/libtfa98xx.so|958010801a4311f87605225b3ec87b2177bf40bb
-lib64/libtfa98xx.so|fc72a8882536379881026cae7aa0090dfb4fd585
+lib/libtfa98xx.so:vendor/lib/libtfa98xx.so|958010801a4311f87605225b3ec87b2177bf40bb
+lib64/libtfa98xx.so:vendor/lib64/libtfa98xx.so|fc72a8882536379881026cae7aa0090dfb4fd585
 
 # Sensors
 vendor/etc/sensors/hals.conf
