@@ -50,18 +50,18 @@ vendor/lib/libmmcamera_s5k2m8sx.so
 vendor/lib/libois_bu24218gwl.so
 
 # Audio libraries
-etc/tfa98xx/coldboot.patch
-etc/tfa98xx/shenqi_music.eq
-etc/tfa98xx/shenqi_music.preset
-etc/tfa98xx/shenqi.speaker
-etc/tfa98xx/shenqi_speech.eq
-etc/tfa98xx/shenqi_speech.preset
-etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config
-etc/tfa98xx/TFA9890_N1C3_2_1_1.patch
+etc/tfa98xx/coldboot.patch:vendor/ampl/coldboot.patch
+etc/tfa98xx/shenqi_music.eq:vendor/ampl/shenqi_music.eq
+etc/tfa98xx/shenqi_music.preset:vendor/ampl/shenqi_music.preset
+etc/tfa98xx/shenqi.speaker:vendor/ampl/shenqi.speaker
+etc/tfa98xx/shenqi_speech.eq:vendor/ampl/shenqi_speech.eq
+etc/tfa98xx/shenqi_speech.preset:vendor/ampl/shenqi_speech.preset
+etc/tfa98xx/TFA9890_N1B12_N1C3_v2.config:vendor/ampl/TFA9890_N1B12_N1C3_v2.config
+etc/tfa98xx/TFA9890_N1C3_2_1_1.patch:vendor/ampl/TFA9890_N1C3_2_1_1.patch
 
 # NXP Amplifier
-lib/libtfa98xx.so:vendor/lib/libtfa98xx.so|958010801a4311f87605225b3ec87b2177bf40bb
-lib64/libtfa98xx.so:vendor/lib64/libtfa98xx.so|fc72a8882536379881026cae7aa0090dfb4fd585
+lib/libtfa98xx.so:vendor/lib/libtfa98xx.so|7a0784d9b49a20355b670d11a60892b92deefb54
+lib64/libtfa98xx.so:vendor/lib64/libtfa98xx.so|08116fbaf94b2cde1ebf464c4134379bfce6311e
 
 # Sensors
 vendor/etc/sensors/hals.conf
