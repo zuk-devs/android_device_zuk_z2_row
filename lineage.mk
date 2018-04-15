@@ -39,7 +39,7 @@ TARGET_VENDOR := ZUK
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="z2_row-user 8.0.0 OPR1.170623.032 3.5.259_180209 release-keys"
+    PRIVATE_BUILD_DESC="z2_row-user 8.0.0 OPR1.170623.032 3.5.344_180404 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "ZUK/z2_row/z2_row:8.0.0/OPR1.170623.032/3.5.259_180209:user/release-keys"
+BUILD_FINGERPRINT := "ZUK/z2_row/z2_row:8.0.0/OPR1.170623.032/3.5.344_180404:user/release-keys"
