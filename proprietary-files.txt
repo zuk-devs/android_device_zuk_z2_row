@@ -66,6 +66,3 @@ lib64/libtfa98xx.so:vendor/lib64/libtfa98xx.so|08116fbaf94b2cde1ebf464c4134379bf
 # Sensors
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
-
-# Thermal
-vendor/etc/thermal-engine.conf
