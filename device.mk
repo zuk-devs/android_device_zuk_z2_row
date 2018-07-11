@@ -15,13 +15,12 @@
 # limitations under the License.
 #
 
-# Get non-open-source specific aspects
-$(call inherit-product, vendor/zuk/z2_row/z2_row-vendor.mk)
+# Inherit from vendor
+$(call inherit-product-if-exists, vendor/zuk/z2_row/z2_row-vendor.mk)
 
 # Local overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \

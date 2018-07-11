@@ -1,2 +1,0 @@
-add_lunch_combo lineage_z2_row-userdebug
-add_lunch_combo lineage_z2_row-eng
