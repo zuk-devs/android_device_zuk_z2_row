@@ -2,10 +2,11 @@ LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
 
+LOCAL_HEADER_LIBRARIES += libhardware_headers
+
 LOCAL_C_INCLUDES += \
      $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include \
      $(call project-path-for,qcom-audio)/hal/msm8974 \
-     hardware/libhardware/include
 
 LOCAL_ADDITIONAL_DEPENDENCIES := INSTALLED_KERNEL_HEADERS
 LOCAL_SHARED_LIBRARIES := liblog libutils libcutils libdl
