@@ -33,3 +33,6 @@ PRODUCT_PACKAGES += \
 
 # Inherit from msm8996-common
 $(call inherit-product, device/zuk/msm8996-common/msm8996.mk)
+
+# Vendor properties
+-include $(LOCAL_PATH)/vendor_prop.mk
