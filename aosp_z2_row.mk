@@ -21,10 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from z2_row device
 $(call inherit-product, device/zuk/z2_row/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelExperience stuff.
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_z2_row
+PRODUCT_NAME := aosp_z2_row
 PRODUCT_DEVICE := z2_row
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
