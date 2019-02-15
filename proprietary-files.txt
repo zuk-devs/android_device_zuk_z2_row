@@ -64,5 +64,4 @@ lib/libtfa98xx.so:vendor/lib/libtfa98xx.so|7a0784d9b49a20355b670d11a60892b92deef
 lib64/libtfa98xx.so:vendor/lib64/libtfa98xx.so|08116fbaf94b2cde1ebf464c4134379bfce6311e
 
 # Sensors
-vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sensor_def_qcomdev.conf
