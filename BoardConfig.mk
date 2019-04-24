@@ -25,6 +25,7 @@ TARGET_OTA_ASSERT_DEVICE := z2_row
 
 # Kernel
 TARGET_KERNEL_CONFIG := z2_row_defconfig
+BOARD_KERNEL_CMDLINE += dm=\"system none ro,0 1 android-verity /dev/sde18\"
 
 # Inherit from the proprietary version
 -include vendor/zuk/z2_row/BoardConfigVendor.mk
