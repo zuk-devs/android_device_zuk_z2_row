@@ -2247,6 +2247,11 @@
         <path name="handset-mic" />
     </path>
 
+    <path name="unprocessed-mic">
+        <path name="handset-mic" />
+        <ctl name="ADC1 Volume" value="12" />
+    </path>
+
     <path name="hdmi-tx">
         <path name="handset-mic" />
     </path>
